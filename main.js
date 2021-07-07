@@ -14,7 +14,7 @@ client.on("message", async (message) => {
        let buttons3 = new disbut.MessageButton()
         .setStyle('url') 
         .setLabel('me') 
-        .setURL('https://discord.com/419836743878180874')
+        .setURL('https://discord.com/users/419836743878180874/')
     let buttons = new disbut.MessageButton()
         .setStyle('green') 
         .setLabel('x role') 
