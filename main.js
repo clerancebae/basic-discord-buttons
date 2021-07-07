@@ -6,7 +6,7 @@ client.on("ready", () => {client.user.setPresence({game: {name: `clerance`,type:
 const disbut = require('discord-buttons');
 disbut(client);
 client.on("message", async (message) => {
-    if (message.content == "!rol" && message.author.id === "419836743878180874") { 
+    if (message.content == "!role" && message.author.id === "419836743878180874") { 
        let buttons2 = new disbut.MessageButton()
         .setStyle('red') // color
         .setLabel('y role')
