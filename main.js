@@ -7,19 +7,19 @@ const disbut = require('discord-buttons');
 disbut(client);
 client.on("message", async (message) => {
     if (message.content == "!role" && message.author.id === "419836743878180874") { 
+         let buttons1 = new disbut.MessageButton()
+        .setStyle('green') 
+        .setLabel('x role') 
+        .setID('Button2') 
        let buttons2 = new disbut.MessageButton()
         .setStyle('red') // color
         .setLabel('y role')
         .setID('Button1') 
-       let buttons3 = new disbut.MessageButton()
+    let buttons3 = new disbut.MessageButton()
         .setStyle('url') 
         .setLabel('me') 
         .setURL('https://discord.com/users/419836743878180874/')
-    let buttons = new disbut.MessageButton()
-        .setStyle('green') 
-        .setLabel('x role') 
-        .setID('Button2') 
-    message.channel.send(':pensive:', { buttons: [buttons , buttons2, buttons3] });
+    message.channel.send(':pensive:', { buttons: [buttons1 , buttons2, buttons3] });
     }
 });
 
