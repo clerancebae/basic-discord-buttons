@@ -27,7 +27,7 @@ client.on('clickButton', async (button) => {
    if (button.id === 'Button1') {
          if (button.clicker.member.roles.cache.get("799316595003752469")) { // specify role id
    await button.clicker.member.roles.remove("799316595003752469")
-            await button.channel.send(`${button.clicker.user} - (${button.clicker.user.id}) u have been given a role for clicking the button.`).then(msg => { msg.delete({ timeout: 30000 }) }).catch(console.error);
+            await button.channel.send(`${button.clicker.user} - (${button.clicker.user.id})u role has been taken because you clicked the button.`).then(msg => { msg.delete({ timeout: 30000 }) }).catch(console.error);
          }
    }
 });
@@ -35,6 +35,6 @@ client.on('clickButton', async (button) => {
 client.on('clickButton', async (button) => {
    if (button.id === 'Button2') {
             await button.clicker.member.roles.add("799316595003752469") // specify role id
-            await button.channel.send(`${button.clicker.user} - (${button.clicker.user.id}) u role has been taken because you clicked the button.`).then(msg => { msg.delete({ timeout: 30000 }) }).catch(console.error);
+            await button.channel.send(`${button.clicker.user} - (${button.clicker.user.id}) u have been given a role for clicking the button.`).then(msg => { msg.delete({ timeout: 30000 }) }).catch(console.error);
         }
 });
